@@ -1,0 +1,275 @@
+.navbar {
+  	font-family: 'Century Gothic'; 
+  	margin-bottom: 0;
+  	border-radius: 0;
+  	background-color: black;
+  	color: #FFF;
+  	padding: 1% 0 -0.1%;
+  	font-size: 1.2em;
+  	border: 0;
+  	position: fixed;
+  	display: block;
+  	width: 100%;
+  	z-index: 99999;
+  	transition: all ease .5s;
+    text-transform: uppercase;
+  }
+
+  }
+  .navbar-logo {
+  	float: left;
+  	min-height: 55px;
+  	padding: 0 15px 5px;
+  	transition: all ease .5s;
+  	vertical-align: middle;
+  }
+  .navbar-toggle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
+    transform: rotate(-45deg) translate(-5px, 4px) ;
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px) ;
+    transform: rotate(45deg) translate(-5px, -4px) ;
+  }
+
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  	color: #FFF;
+  	background-color: black;
+  }
+
+  .navbar-inverse .navbar-nav li a {
+  	color: #FFF;
+  }
+
+  /* Top and Bottom borders come in */
+ul.topBotomBordersIn a:before, ul.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+ul.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+ul.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+  .content {
+  position: absolute;
+  font-family: 'Century Gothic';
+  top: 59%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #FFF;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+
+.content__container:after, .content__container:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__list {
+  margin:0;
+  vertical-align: middle;
+  text-align: center;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+.container {
+	font-family: 'Century Gothic';
+}
+
+
+.col-sm-4 img:hover {
+  opacity: 0.6;
+}
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
+  #icon {
+  	max-width: 200px;
+  	margin: 1% auto;
+  }
+
+  footer {
+  	width: 100%;
+  	background-color: black;
+  	padding: 3%;
+  	color: #FFF;
+  	font-family: 'Century Gothic';
+
+  }
+
+
+  .fa {
+  	padding: 15px;
+  	font-size: 25px;
+  	color: gray;
+  }
+
+  .fa:hover {
+  	color: #FFF;
+  	text-decoration: none;
+  }
+
+  @media (max-width: 75%) {
+  	.fa {
+  		font-size: 20px;
+  		padding: 10px;
+  	}
+  }
+  @media (max-width: 75%) {
+  	.carousel-caption {
+      padding: auto;
+  		display: none;
+  	}
+  	#icon {
+  		max-width: 150px;
+  	}
+  	h2 {
+  		font-size: 1.7em;
+  	}
+    .content__container__list {
+      display: none;
+    }
+  
+  }
+
+  .item {
+    font-family: 'Century Gothic';
+  }
